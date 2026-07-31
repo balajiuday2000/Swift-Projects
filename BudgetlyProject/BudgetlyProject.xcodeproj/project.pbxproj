@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2901523028A422EA00F2CCED /* BudgetlyProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901522F28A422EA00F2CCED /* BudgetlyProjectApp.swift */; };
+		2901523228A422EA00F2CCED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901523128A422EA00F2CCED /* ContentView.swift */; };
+		2901523428A422EB00F2CCED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2901523328A422EB00F2CCED /* Assets.xcassets */; };
+		2901523728A422EB00F2CCED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2901523628A422EB00F2CCED /* Preview Assets.xcassets */; };
+		2901523928A422EB00F2CCED /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901523828A422EB00F2CCED /* Persistence.swift */; };
+		2901523C28A422EB00F2CCED /* BudgetlyProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2901523A28A422EB00F2CCED /* BudgetlyProject.xcdatamodeld */; };
+		2901525128A4262300F2CCED /* Trips+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901524D28A4262300F2CCED /* Trips+CoreDataClass.swift */; };
+		2901525228A4262300F2CCED /* Trips+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901524E28A4262300F2CCED /* Trips+CoreDataProperties.swift */; };
+		2901525328A4262300F2CCED /* People+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901524F28A4262300F2CCED /* People+CoreDataClass.swift */; };
+		2901525428A4262300F2CCED /* People+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901525028A4262300F2CCED /* People+CoreDataProperties.swift */; };
+		2901525628A427D600F2CCED /* TripsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901525528A427D600F2CCED /* TripsStorage.swift */; };
+		2901525928A42A5400F2CCED /* TripsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901525828A42A5400F2CCED /* TripsViewModel.swift */; };
+		2901525C28A42DB500F2CCED /* TripInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901525B28A42DB500F2CCED /* TripInfoView.swift */; };
+		2901525F28A42DCB00F2CCED /* AddTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901525E28A42DCB00F2CCED /* AddTripView.swift */; };
+		2901526128A42EC500F2CCED /* AddTripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901526028A42EC500F2CCED /* AddTripViewModel.swift */; };
+		2901526328A4304C00F2CCED /* PeopleStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901526228A4304C00F2CCED /* PeopleStorage.swift */; };
+		2901526528A43A2900F2CCED /* TripInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901526428A43A2900F2CCED /* TripInfoViewModel.swift */; };
+		2901526828A4437300F2CCED /* ExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901526728A4437300F2CCED /* ExpensesView.swift */; };
+		290D5F3828A62104001E7F88 /* SettleUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D5F3728A62104001E7F88 /* SettleUpView.swift */; };
+		290D5F3A28A62114001E7F88 /* SettleUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D5F3928A62114001E7F88 /* SettleUpViewModel.swift */; };
+		290D5F3C28A6AF76001E7F88 /* MailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D5F3B28A6AF75001E7F88 /* MailData.swift */; };
+		290D5F3F28A6B235001E7F88 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D5F3E28A6B235001E7F88 /* MailView.swift */; };
+		29302CF028AA0C2200A95E06 /* TripsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29302CEF28AA0C2200A95E06 /* TripsModel.swift */; };
+		29302CF228AA8E7500A95E06 /* AddTripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29302CF128AA8E7500A95E06 /* AddTripModel.swift */; };
+		29302CF428AA94A100A95E06 /* TripInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29302CF328AA94A100A95E06 /* TripInfoModel.swift */; };
+		29302CF628AA95E400A95E06 /* AddExpensesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29302CF528AA95E400A95E06 /* AddExpensesModel.swift */; };
+		29302CF828AA9A6E00A95E06 /* ExpensesInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29302CF728AA9A6E00A95E06 /* ExpensesInfoModel.swift */; };
+		29302CFA28AA9BD600A95E06 /* SettleUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29302CF928AA9BD600A95E06 /* SettleUpModel.swift */; };
+		29302CFC28AA9F4700A95E06 /* ExpensesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29302CFB28AA9F4700A95E06 /* ExpensesModel.swift */; };
+		29302D0428AAA94A00A95E06 /* BudgetlyProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29302D0328AAA94A00A95E06 /* BudgetlyProjectTests.swift */; };
+		29302D0B28AAA9F100A95E06 /* PersistenceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29302D0A28AAA9F100A95E06 /* PersistenceTest.swift */; };
+		29302D0F28AAAE9A00A95E06 /* PeopleStorageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29302D0E28AAAE9A00A95E06 /* PeopleStorageTest.swift */; };
+		29302D1128AABCDA00A95E06 /* TripStorageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29302D1028AABCD900A95E06 /* TripStorageTest.swift */; };
+		29302D1928AAC4EE00A95E06 /* ExpensesStorageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29302D1828AAC4EE00A95E06 /* ExpensesStorageTest.swift */; };
+		29608FCD28A4B2D100B724FD /* Expenses+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29608FCB28A4B2D100B724FD /* Expenses+CoreDataClass.swift */; };
+		29608FCE28A4B2D100B724FD /* Expenses+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29608FCC28A4B2D100B724FD /* Expenses+CoreDataProperties.swift */; };
+		29608FD128A4B75400B724FD /* ExpensesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29608FD028A4B75400B724FD /* ExpensesViewModel.swift */; };
+		29608FD328A4B88F00B724FD /* ExpensesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29608FD228A4B88F00B724FD /* ExpensesStorage.swift */; };
+		29608FD628A4BD8A00B724FD /* AddExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29608FD528A4BD8A00B724FD /* AddExpensesView.swift */; };
+		29608FD828A4C35B00B724FD /* AddExpensesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29608FD728A4C35B00B724FD /* AddExpensesViewModel.swift */; };
+		29F360E128A58F0B00AE28B5 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F360E028A58F0B00AE28B5 /* ImagePickerView.swift */; };
+		29F360E328A58F1600AE28B5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F360E228A58F1600AE28B5 /* Coordinator.swift */; };
+		29F360E628A59A9500AE28B5 /* ExpensesInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F360E528A59A9500AE28B5 /* ExpensesInfoView.swift */; };
+		29F360E828A59AA400AE28B5 /* ExpensesInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F360E728A59AA400AE28B5 /* ExpensesInfoViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29302D0528AAA94A00A95E06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2901522428A422EA00F2CCED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2901522B28A422EA00F2CCED;
+			remoteInfo = BudgetlyProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2901522C28A422EA00F2CCED /* Budgetly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Budgetly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2901522F28A422EA00F2CCED /* BudgetlyProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetlyProjectApp.swift; sourceTree = "<group>"; };
+		2901523128A422EA00F2CCED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2901523328A422EB00F2CCED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2901523628A422EB00F2CCED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2901523828A422EB00F2CCED /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		2901523B28A422EB00F2CCED /* BudgetlyProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BudgetlyProject.xcdatamodel; sourceTree = "<group>"; };
+		2901524D28A4262300F2CCED /* Trips+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Trips+CoreDataClass.swift"; path = "BudgetlyProject/CoreData/Trips/Trips+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		2901524E28A4262300F2CCED /* Trips+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Trips+CoreDataProperties.swift"; path = "BudgetlyProject/CoreData/Trips/Trips+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		2901524F28A4262300F2CCED /* People+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "People+CoreDataClass.swift"; path = "BudgetlyProject/CoreData/People/People+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		2901525028A4262300F2CCED /* People+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "People+CoreDataProperties.swift"; path = "BudgetlyProject/CoreData/People/People+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		2901525528A427D600F2CCED /* TripsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsStorage.swift; sourceTree = "<group>"; };
+		2901525828A42A5400F2CCED /* TripsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewModel.swift; sourceTree = "<group>"; };
+		2901525B28A42DB500F2CCED /* TripInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripInfoView.swift; sourceTree = "<group>"; };
+		2901525E28A42DCB00F2CCED /* AddTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripView.swift; sourceTree = "<group>"; };
+		2901526028A42EC500F2CCED /* AddTripViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripViewModel.swift; sourceTree = "<group>"; };
+		2901526228A4304C00F2CCED /* PeopleStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleStorage.swift; sourceTree = "<group>"; };
+		2901526428A43A2900F2CCED /* TripInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripInfoViewModel.swift; sourceTree = "<group>"; };
+		2901526728A4437300F2CCED /* ExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesView.swift; sourceTree = "<group>"; };
+		290D5F3728A62104001E7F88 /* SettleUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettleUpView.swift; sourceTree = "<group>"; };
+		290D5F3928A62114001E7F88 /* SettleUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettleUpViewModel.swift; sourceTree = "<group>"; };
+		290D5F3B28A6AF75001E7F88 /* MailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailData.swift; sourceTree = "<group>"; };
+		290D5F3E28A6B235001E7F88 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+		29302CEF28AA0C2200A95E06 /* TripsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsModel.swift; sourceTree = "<group>"; };
+		29302CF128AA8E7500A95E06 /* AddTripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripModel.swift; sourceTree = "<group>"; };
+		29302CF328AA94A100A95E06 /* TripInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripInfoModel.swift; sourceTree = "<group>"; };
+		29302CF528AA95E400A95E06 /* AddExpensesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpensesModel.swift; sourceTree = "<group>"; };
+		29302CF728AA9A6E00A95E06 /* ExpensesInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesInfoModel.swift; sourceTree = "<group>"; };
+		29302CF928AA9BD600A95E06 /* SettleUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettleUpModel.swift; sourceTree = "<group>"; };
+		29302CFB28AA9F4700A95E06 /* ExpensesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesModel.swift; sourceTree = "<group>"; };
+		29302D0128AAA94A00A95E06 /* BudgetlyProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudgetlyProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29302D0328AAA94A00A95E06 /* BudgetlyProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetlyProjectTests.swift; sourceTree = "<group>"; };
+		29302D0A28AAA9F100A95E06 /* PersistenceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceTest.swift; sourceTree = "<group>"; };
+		29302D0E28AAAE9A00A95E06 /* PeopleStorageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleStorageTest.swift; sourceTree = "<group>"; };
+		29302D1028AABCD900A95E06 /* TripStorageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripStorageTest.swift; sourceTree = "<group>"; };
+		29302D1828AAC4EE00A95E06 /* ExpensesStorageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesStorageTest.swift; sourceTree = "<group>"; };
+		29608FCB28A4B2D100B724FD /* Expenses+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expenses+CoreDataClass.swift"; sourceTree = "<group>"; };
+		29608FCC28A4B2D100B724FD /* Expenses+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expenses+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		29608FD028A4B75400B724FD /* ExpensesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewModel.swift; sourceTree = "<group>"; };
+		29608FD228A4B88F00B724FD /* ExpensesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesStorage.swift; sourceTree = "<group>"; };
+		29608FD528A4BD8A00B724FD /* AddExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpensesView.swift; sourceTree = "<group>"; };
+		29608FD728A4C35B00B724FD /* AddExpensesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpensesViewModel.swift; sourceTree = "<group>"; };
+		29F360E028A58F0B00AE28B5 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		29F360E228A58F1600AE28B5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		29F360E528A59A9500AE28B5 /* ExpensesInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesInfoView.swift; sourceTree = "<group>"; };
+		29F360E728A59AA400AE28B5 /* ExpensesInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesInfoViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2901522928A422EA00F2CCED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29302CFE28AAA94A00A95E06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2901522328A422EA00F2CCED = {
+			isa = PBXGroup;
+			children = (
+				2901522E28A422EA00F2CCED /* BudgetlyProject */,
+				29302D0228AAA94A00A95E06 /* BudgetlyProjectTests */,
+				2901522D28A422EA00F2CCED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2901522D28A422EA00F2CCED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2901522C28A422EA00F2CCED /* Budgetly.app */,
+				29302D0128AAA94A00A95E06 /* BudgetlyProjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2901522E28A422EA00F2CCED /* BudgetlyProject */ = {
+			isa = PBXGroup;
+			children = (
+				290D5F3628A620F0001E7F88 /* SettleUp */,
+				29F360E428A5977500AE28B5 /* ExpensesInfo */,
+				29608FD428A4BD5800B724FD /* AddExpenses */,
+				2901526628A4436000F2CCED /* Expenses */,
+				2901525D28A42DBE00F2CCED /* AddTrip */,
+				2901525A28A42DA200F2CCED /* TripInfo */,
+				2901525728A42A2C00F2CCED /* Trips */,
+				2901524A28A4252000F2CCED /* CoreData */,
+				2901522F28A422EA00F2CCED /* BudgetlyProjectApp.swift */,
+				2901523328A422EB00F2CCED /* Assets.xcassets */,
+				2901523A28A422EB00F2CCED /* BudgetlyProject.xcdatamodeld */,
+				2901523528A422EB00F2CCED /* Preview Content */,
+			);
+			path = BudgetlyProject;
+			sourceTree = "<group>";
+		};
+		2901523528A422EB00F2CCED /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2901523628A422EB00F2CCED /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2901524A28A4252000F2CCED /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2901523828A422EB00F2CCED /* Persistence.swift */,
+				29608FCF28A4B33D00B724FD /* Expenses */,
+				2901524C28A4253400F2CCED /* People */,
+				2901524B28A4252E00F2CCED /* Trips */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		2901524B28A4252E00F2CCED /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+				2901524D28A4262300F2CCED /* Trips+CoreDataClass.swift */,
+				2901524E28A4262300F2CCED /* Trips+CoreDataProperties.swift */,
+				2901525528A427D600F2CCED /* TripsStorage.swift */,
+			);
+			path = Trips;
+			sourceTree = "<group>";
+		};
+		2901524C28A4253400F2CCED /* People */ = {
+			isa = PBXGroup;
+			children = (
+				2901524F28A4262300F2CCED /* People+CoreDataClass.swift */,
+				2901525028A4262300F2CCED /* People+CoreDataProperties.swift */,
+				2901526228A4304C00F2CCED /* PeopleStorage.swift */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		2901525728A42A2C00F2CCED /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+				2901523128A422EA00F2CCED /* ContentView.swift */,
+				2901525828A42A5400F2CCED /* TripsViewModel.swift */,
+				29302CEF28AA0C2200A95E06 /* TripsModel.swift */,
+			);
+			path = Trips;
+			sourceTree = "<group>";
+		};
+		2901525A28A42DA200F2CCED /* TripInfo */ = {
+			isa = PBXGroup;
+			children = (
+				2901525B28A42DB500F2CCED /* TripInfoView.swift */,
+				2901526428A43A2900F2CCED /* TripInfoViewModel.swift */,
+				29302CF328AA94A100A95E06 /* TripInfoModel.swift */,
+			);
+			path = TripInfo;
+			sourceTree = "<group>";
+		};
+		2901525D28A42DBE00F2CCED /* AddTrip */ = {
+			isa = PBXGroup;
+			children = (
+				2901525E28A42DCB00F2CCED /* AddTripView.swift */,
+				2901526028A42EC500F2CCED /* AddTripViewModel.swift */,
+				29302CF128AA8E7500A95E06 /* AddTripModel.swift */,
+			);
+			path = AddTrip;
+			sourceTree = "<group>";
+		};
+		2901526628A4436000F2CCED /* Expenses */ = {
+			isa = PBXGroup;
+			children = (
+				2901526728A4437300F2CCED /* ExpensesView.swift */,
+				29608FD028A4B75400B724FD /* ExpensesViewModel.swift */,
+				29302CFB28AA9F4700A95E06 /* ExpensesModel.swift */,
+			);
+			path = Expenses;
+			sourceTree = "<group>";
+		};
+		290D5F3628A620F0001E7F88 /* SettleUp */ = {
+			isa = PBXGroup;
+			children = (
+				290D5F3D28A6AFA0001E7F88 /* Mail */,
+				290D5F3728A62104001E7F88 /* SettleUpView.swift */,
+				290D5F3928A62114001E7F88 /* SettleUpViewModel.swift */,
+				29302CF928AA9BD600A95E06 /* SettleUpModel.swift */,
+			);
+			path = SettleUp;
+			sourceTree = "<group>";
+		};
+		290D5F3D28A6AFA0001E7F88 /* Mail */ = {
+			isa = PBXGroup;
+			children = (
+				290D5F3B28A6AF75001E7F88 /* MailData.swift */,
+				290D5F3E28A6B235001E7F88 /* MailView.swift */,
+			);
+			path = Mail;
+			sourceTree = "<group>";
+		};
+		29302D0228AAA94A00A95E06 /* BudgetlyProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				29302D1A28AAC4F400A95E06 /* CoreDataTest */,
+				29302D0328AAA94A00A95E06 /* BudgetlyProjectTests.swift */,
+			);
+			path = BudgetlyProjectTests;
+			sourceTree = "<group>";
+		};
+		29302D1A28AAC4F400A95E06 /* CoreDataTest */ = {
+			isa = PBXGroup;
+			children = (
+				29302D0A28AAA9F100A95E06 /* PersistenceTest.swift */,
+				29302D0E28AAAE9A00A95E06 /* PeopleStorageTest.swift */,
+				29302D1828AAC4EE00A95E06 /* ExpensesStorageTest.swift */,
+				29302D1028AABCD900A95E06 /* TripStorageTest.swift */,
+			);
+			path = CoreDataTest;
+			sourceTree = "<group>";
+		};
+		29608FCF28A4B33D00B724FD /* Expenses */ = {
+			isa = PBXGroup;
+			children = (
+				29608FCB28A4B2D100B724FD /* Expenses+CoreDataClass.swift */,
+				29608FCC28A4B2D100B724FD /* Expenses+CoreDataProperties.swift */,
+				29608FD228A4B88F00B724FD /* ExpensesStorage.swift */,
+			);
+			path = Expenses;
+			sourceTree = "<group>";
+		};
+		29608FD428A4BD5800B724FD /* AddExpenses */ = {
+			isa = PBXGroup;
+			children = (
+				29F360DF28A58EEC00AE28B5 /* Camera */,
+				29608FD528A4BD8A00B724FD /* AddExpensesView.swift */,
+				29608FD728A4C35B00B724FD /* AddExpensesViewModel.swift */,
+				29302CF528AA95E400A95E06 /* AddExpensesModel.swift */,
+			);
+			path = AddExpenses;
+			sourceTree = "<group>";
+		};
+		29F360DF28A58EEC00AE28B5 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				29F360E028A58F0B00AE28B5 /* ImagePickerView.swift */,
+				29F360E228A58F1600AE28B5 /* Coordinator.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		29F360E428A5977500AE28B5 /* ExpensesInfo */ = {
+			isa = PBXGroup;
+			children = (
+				29F360E528A59A9500AE28B5 /* ExpensesInfoView.swift */,
+				29F360E728A59AA400AE28B5 /* ExpensesInfoViewModel.swift */,
+				29302CF728AA9A6E00A95E06 /* ExpensesInfoModel.swift */,
+			);
+			path = ExpensesInfo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2901522B28A422EA00F2CCED /* BudgetlyProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2901523F28A422EB00F2CCED /* Build configuration list for PBXNativeTarget "BudgetlyProject" */;
+			buildPhases = (
+				2901522828A422EA00F2CCED /* Sources */,
+				2901522928A422EA00F2CCED /* Frameworks */,
+				2901522A28A422EA00F2CCED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BudgetlyProject;
+			productName = BudgetlyProject;
+			productReference = 2901522C28A422EA00F2CCED /* Budgetly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		29302D0028AAA94A00A95E06 /* BudgetlyProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29302D0728AAA94A00A95E06 /* Build configuration list for PBXNativeTarget "BudgetlyProjectTests" */;
+			buildPhases = (
+				29302CFD28AAA94A00A95E06 /* Sources */,
+				29302CFE28AAA94A00A95E06 /* Frameworks */,
+				29302CFF28AAA94A00A95E06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29302D0628AAA94A00A95E06 /* PBXTargetDependency */,
+			);
+			name = BudgetlyProjectTests;
+			productName = BudgetlyProjectTests;
+			productReference = 29302D0128AAA94A00A95E06 /* BudgetlyProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2901522428A422EA00F2CCED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					2901522B28A422EA00F2CCED = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					29302D0028AAA94A00A95E06 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 2901522B28A422EA00F2CCED;
+					};
+				};
+			};
+			buildConfigurationList = 2901522728A422EA00F2CCED /* Build configuration list for PBXProject "BudgetlyProject" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2901522328A422EA00F2CCED;
+			productRefGroup = 2901522D28A422EA00F2CCED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2901522B28A422EA00F2CCED /* BudgetlyProject */,
+				29302D0028AAA94A00A95E06 /* BudgetlyProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2901522A28A422EA00F2CCED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2901523728A422EB00F2CCED /* Preview Assets.xcassets in Resources */,
+				2901523428A422EB00F2CCED /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29302CFF28AAA94A00A95E06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2901522828A422EA00F2CCED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2901525128A4262300F2CCED /* Trips+CoreDataClass.swift in Sources */,
+				29F360E128A58F0B00AE28B5 /* ImagePickerView.swift in Sources */,
+				2901523928A422EB00F2CCED /* Persistence.swift in Sources */,
+				2901525428A4262300F2CCED /* People+CoreDataProperties.swift in Sources */,
+				290D5F3C28A6AF76001E7F88 /* MailData.swift in Sources */,
+				29608FD828A4C35B00B724FD /* AddExpensesViewModel.swift in Sources */,
+				29302CF228AA8E7500A95E06 /* AddTripModel.swift in Sources */,
+				29302CFC28AA9F4700A95E06 /* ExpensesModel.swift in Sources */,
+				2901526828A4437300F2CCED /* ExpensesView.swift in Sources */,
+				29608FCD28A4B2D100B724FD /* Expenses+CoreDataClass.swift in Sources */,
+				29F360E828A59AA400AE28B5 /* ExpensesInfoViewModel.swift in Sources */,
+				29302CF028AA0C2200A95E06 /* TripsModel.swift in Sources */,
+				2901525228A4262300F2CCED /* Trips+CoreDataProperties.swift in Sources */,
+				29F360E328A58F1600AE28B5 /* Coordinator.swift in Sources */,
+				2901525328A4262300F2CCED /* People+CoreDataClass.swift in Sources */,
+				2901525928A42A5400F2CCED /* TripsViewModel.swift in Sources */,
+				29608FD628A4BD8A00B724FD /* AddExpensesView.swift in Sources */,
+				2901526128A42EC500F2CCED /* AddTripViewModel.swift in Sources */,
+				29302CF828AA9A6E00A95E06 /* ExpensesInfoModel.swift in Sources */,
+				2901523228A422EA00F2CCED /* ContentView.swift in Sources */,
+				29608FD128A4B75400B724FD /* ExpensesViewModel.swift in Sources */,
+				29F360E628A59A9500AE28B5 /* ExpensesInfoView.swift in Sources */,
+				29302CFA28AA9BD600A95E06 /* SettleUpModel.swift in Sources */,
+				29608FD328A4B88F00B724FD /* ExpensesStorage.swift in Sources */,
+				290D5F3F28A6B235001E7F88 /* MailView.swift in Sources */,
+				2901526528A43A2900F2CCED /* TripInfoViewModel.swift in Sources */,
+				2901525628A427D600F2CCED /* TripsStorage.swift in Sources */,
+				29302CF628AA95E400A95E06 /* AddExpensesModel.swift in Sources */,
+				290D5F3A28A62114001E7F88 /* SettleUpViewModel.swift in Sources */,
+				2901523028A422EA00F2CCED /* BudgetlyProjectApp.swift in Sources */,
+				29608FCE28A4B2D100B724FD /* Expenses+CoreDataProperties.swift in Sources */,
+				2901523C28A422EB00F2CCED /* BudgetlyProject.xcdatamodeld in Sources */,
+				2901525C28A42DB500F2CCED /* TripInfoView.swift in Sources */,
+				290D5F3828A62104001E7F88 /* SettleUpView.swift in Sources */,
+				29302CF428AA94A100A95E06 /* TripInfoModel.swift in Sources */,
+				2901526328A4304C00F2CCED /* PeopleStorage.swift in Sources */,
+				2901525F28A42DCB00F2CCED /* AddTripView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29302CFD28AAA94A00A95E06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29302D1128AABCDA00A95E06 /* TripStorageTest.swift in Sources */,
+				29302D1928AAC4EE00A95E06 /* ExpensesStorageTest.swift in Sources */,
+				29302D0F28AAAE9A00A95E06 /* PeopleStorageTest.swift in Sources */,
+				29302D0428AAA94A00A95E06 /* BudgetlyProjectTests.swift in Sources */,
+				29302D0B28AAA9F100A95E06 /* PersistenceTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29302D0628AAA94A00A95E06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2901522B28A422EA00F2CCED /* BudgetlyProject */;
+			targetProxy = 29302D0528AAA94A00A95E06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2901523D28A422EB00F2CCED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2901523E28A422EB00F2CCED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2901524028A422EB00F2CCED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BudgetlyProject/Preview Content\"";
+				DEVELOPMENT_TEAM = KKX8KEUZ6R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.softwareMerchant.BudgetlyProject;
+				PRODUCT_NAME = Budgetly;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2901524128A422EB00F2CCED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BudgetlyProject/Preview Content\"";
+				DEVELOPMENT_TEAM = KKX8KEUZ6R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.softwareMerchant.BudgetlyProject;
+				PRODUCT_NAME = Budgetly;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		29302D0828AAA94A00A95E06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KKX8KEUZ6R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.softwareMerchant.BudgetlyProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BudgetlyProject.app/BudgetlyProject";
+			};
+			name = Debug;
+		};
+		29302D0928AAA94A00A95E06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KKX8KEUZ6R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.softwareMerchant.BudgetlyProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BudgetlyProject.app/BudgetlyProject";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2901522728A422EA00F2CCED /* Build configuration list for PBXProject "BudgetlyProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2901523D28A422EB00F2CCED /* Debug */,
+				2901523E28A422EB00F2CCED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2901523F28A422EB00F2CCED /* Build configuration list for PBXNativeTarget "BudgetlyProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2901524028A422EB00F2CCED /* Debug */,
+				2901524128A422EB00F2CCED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29302D0728AAA94A00A95E06 /* Build configuration list for PBXNativeTarget "BudgetlyProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29302D0828AAA94A00A95E06 /* Debug */,
+				29302D0928AAA94A00A95E06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2901523A28A422EB00F2CCED /* BudgetlyProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2901523B28A422EB00F2CCED /* BudgetlyProject.xcdatamodel */,
+			);
+			currentVersion = 2901523B28A422EB00F2CCED /* BudgetlyProject.xcdatamodel */;
+			path = BudgetlyProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2901522428A422EA00F2CCED /* Project object */;
+}
